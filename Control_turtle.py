@@ -20,10 +20,14 @@ def move_right():
     turtle.forward(50)
     turtle.stamp()
 
+def restart():
+    turtle.reset()
+
 turtle.shape('turtle')
 turtle.onkey(move_up, 'w')
 turtle.onkey(move_left, 'a')
 turtle.onkey(move_down, 's')
 turtle.onkey(move_right, 'd')
+turtle.onkey(restart, 'Escape')
 turtle.listen()
 turtle.exitonclick()
